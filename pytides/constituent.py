@@ -2,7 +2,8 @@
 import string
 import operator as op
 import numpy as np
-import nodal_corrections as nc
+from functools import reduce 
+from . import nodal_corrections as nc
 
 class BaseConstituent(object):
 	xdo_int = {
@@ -157,4 +158,3 @@ noaa = [
 	_rho1, _Q1, _T2, _R2, _2Q1, _P1, _2SM2, _M3, _L2, _2MK3, _K2,
 	_M8, _MS4
 ]
-
